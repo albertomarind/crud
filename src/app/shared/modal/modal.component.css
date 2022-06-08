@@ -1,0 +1,55 @@
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    /*
+    inset 0 es lo mismo que
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    */
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 10;
+}
+
+.modal-content {
+    width: 500px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+    border-radius: 6px;
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+}
+
+.modal-btn-close{
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+    top: 15px;
+    right: 8px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.modal-btn-close:hover{
+    color:darkred;
+}
+
+
+.modal-body {
+    padding: 15px;
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}

@@ -1,0 +1,15 @@
+<div class="modal" *ngIf="show">
+    <div class="modal-content">
+        <div class="modal-header">
+            <!-- <h4>{{title}}</h4> -->
+            <div [style.color]="'black'" [style.fontSize.px]="18">{{title}}</div>
+            <span class="modal-btn-close" (click)="close();">x</span>
+        </div>
+        <div class="modal-body">
+            <ng-content select="[body]"></ng-content>
+        </div>
+        <div class="modal-footer">
+            <ng-content select="[footer]"></ng-content>
+        </div>
+    </div>
+</div>
