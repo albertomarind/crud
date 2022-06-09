@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="card-header">
+        <ng-container *ngIf="pathImage; else imageNotFound">
+            <img class="card-image" [src]="pathImage" >
+        </ng-container>
+      
+    </div>
+    <div class="card-body">
+        {{description}}
+    </div>
+    <div class="card-footer">
+        <button>Seleccionar</button>
+    </div>
+</div>
+
+<ng-template #imageNotFound>
+    <img class="card-image" src="http://pago.iensccsa.edu.sv/assets/camaleon_cms/image-not-found-26112ee47503d45cff89e808e1d1a5f7.png" >
+</ng-template> 

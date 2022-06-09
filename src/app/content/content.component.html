@@ -1,17 +1,27 @@
-<div class="content">
-    <app-button class="btn-default" (click)="openModal()">Abrir modal 1</app-button>
-    {{mostrarModal}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <router-outlet></router-outlet>
 
-    <div class="position-relative">
-        <div class="position-absolute"></div>
+            <!-- <div class="content">
+                <app-button class="btn-default" (click)="openModal()">Abrir modal 1</app-button>
+                {{mostrarModal}}
+
+                <div class="position-relative">
+                    <div class="position-absolute"></div>
+                </div>
+                <app-modal [title]="tituloModal" [(show)]="mostrarModal">
+                    <div body>
+                        El usuario que se eliminara es el siguiente: {{userSelected?.nombre}}
+                    </div>
+                    <div footer class="footer">
+                        <app-button class="btn-default">Close</app-button>
+                        <app-button class="btn-primary">Save</app-button>
+                    </div>
+                </app-modal>
+
+                <app-table [elements]="users" (onSelect)="selectUser($event)"></app-table>
+            </div> -->
+        </div>
     </div>
-    <app-modal [title]="tituloModal" [(show)]="mostrarModal" >
-        <div body>
-            Texto body
-        </div>
-        <div footer class="footer">
-            <app-button class="btn-default">Close</app-button>
-            <app-button class="btn-primary">Save</app-button>
-        </div>
-    </app-modal>
 </div>

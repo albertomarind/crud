@@ -1,0 +1,23 @@
+<table class="table">
+    <thead class="table-header">
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>
+                Accion
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of items;index as i">
+            <td>{{item.id}}</td>
+            <td>{{item.nombre}}</td>
+            <td>{{item.edad}}</td>
+            <td>
+                <app-button class="btn-primary">Editar</app-button>
+                <app-button class="btn-default" (click)="onSelect.emit(item);">Ver</app-button>
+            </td>
+        </tr>
+    </tbody>
+</table>

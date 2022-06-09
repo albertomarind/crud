@@ -1,0 +1,31 @@
+.table {
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    border-spacing: 0;
+    border:1px solid gray;
+}
+
+.table-header {
+    background-color: #337ab7;
+    color: white;
+}
+
+td,
+th {
+    text-align: center;
+    padding: 8px;
+}
+
+tbody tr:nth-child(even){
+    background-color: #e7e7e7;
+}
+
+tbody tr:hover {
+    background-color: #bfbfbf;
+    cursor: pointer;
+}
+
+app-button + app-button{
+    margin-left:5px;
+}

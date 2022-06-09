@@ -1,0 +1,22 @@
+.card {
+    background-color: white;
+    display: inline-block;
+}
+
+.card-header{
+    height: 140px;
+    overflow: hidden;
+}
+.card-header .card-image{
+    width: 100%;
+}
+
+.card-body, .card-footer{
+    padding:16px;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
