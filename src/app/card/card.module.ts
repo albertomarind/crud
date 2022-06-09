@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardListComponent } from './card-list/card-list.component';
 import { CardComponent } from './card/card.component';
-import { ButtonComponent } from '../shared';
+import { ButtonComponent, SharedModule } from '../shared';
 
 
 
@@ -12,7 +12,8 @@ import { ButtonComponent } from '../shared';
     CardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   exports: [
     CardListComponent,
